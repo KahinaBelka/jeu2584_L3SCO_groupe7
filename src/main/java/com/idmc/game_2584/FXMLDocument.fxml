@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="613.0" prefWidth="445.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FXMLDocumentController">
+    <children>
+      <Pane fx:id="fond" onKeyPressed="#keyPressed" prefHeight="613.0" prefWidth="866.0">
+         <children>
+            <GridPane fx:id="grille2" gridLinesVisible="true" layoutX="445.0" layoutY="191.0" prefHeight="397.0" prefWidth="397.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+            </GridPane>
+            <GridPane fx:id="grille1" gridLinesVisible="true" layoutX="24.0" layoutY="191.0" onMouseDragged="#handleDragAction" prefHeight="397.0" prefWidth="397.0">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </GridPane>
+            <Button layoutX="383.0" layoutY="82.0" mnemonicParsing="false" onMouseClicked="#handleButtonAction" prefHeight="50.0" prefWidth="100.0" text="MENU" />
+            <Button layoutX="399.0" layoutY="139.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="68.0" text="RULES" />
+            <Pane layoutX="768.0" layoutY="94.0" prefHeight="62.0" prefWidth="75.0" style="-fx-background-color: LIGHTGREEN;">
+               <children>
+                  <Label layoutX="20.0" layoutY="14.0" text="Moves" />
+                  <Label fx:id="moves2" alignment="CENTER" contentDisplay="CENTER" layoutX="11.0" layoutY="31.0" prefHeight="21.0" prefWidth="53.0" text="0" textAlignment="CENTER" />
+               </children>
+            </Pane>
+            <Pane layoutX="24.0" layoutY="94.0" prefHeight="62.0" prefWidth="75.0" style="-fx-background-color: lightgreen;">
+               <children>
+                  <Label layoutX="20.0" layoutY="14.0" text="Moves" />
+                  <Label fx:id="moves1" alignment="CENTER" contentDisplay="CENTER" layoutX="11.0" layoutY="31.0" prefHeight="21.0" prefWidth="53.0" text="0" textAlignment="CENTER" />
+               </children>
+            </Pane>
+            <Label layoutX="24.0" layoutY="34.0" prefHeight="62.0" prefWidth="133.0" text="JOUEUR 1">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="729.0" layoutY="34.0" prefHeight="62.0" prefWidth="113.0" text="JOUEUR 2">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Button layoutX="123.0" layoutY="94.0" mnemonicParsing="false" text="GIVE UP" />
+            <Button layoutX="123.0" layoutY="131.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="59.0" text="UNDO" />
+            <Button layoutX="197.0" layoutY="94.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="59.0" text="SCORE" />
+            <Button layoutX="272.0" layoutY="94.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="59.0" text="BEST" />
+            <Label fx:id="score1" alignment="CENTER" layoutX="197.0" layoutY="129.0" prefHeight="25.0" prefWidth="59.0" text="score1" />
+            <Label fx:id="best1" alignment="CENTER" layoutX="272.0" layoutY="131.0" prefHeight="25.0" prefWidth="59.0" text="best1" />
+            <Button layoutX="696.0" layoutY="94.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="59.0" text="GIVE UP" />
+            <Button layoutX="623.0" layoutY="94.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="59.0" text="SCORE" />
+            <Button layoutX="551.0" layoutY="94.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="59.0" text="BEST" />
+            <Button layoutX="696.0" layoutY="129.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="59.0" text="UNDO" />
+            <Label fx:id="score2" alignment="CENTER" contentDisplay="RIGHT" layoutX="623.0" layoutY="131.0" prefHeight="25.0" prefWidth="59.0" text="score2" />
+            <Label fx:id="best2" alignment="CENTER" contentDisplay="RIGHT" layoutX="551.0" layoutY="131.0" prefHeight="25.0" prefWidth="59.0" text="best2" />
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="333.0" layoutY="-10.0" prefHeight="89.0" prefWidth="201.0" style="-fx-font-style: BOLD;" text="2048 FIBONACCI" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+    </children>
+</AnchorPane>
