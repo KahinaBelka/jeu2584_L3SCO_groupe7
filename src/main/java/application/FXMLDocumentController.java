@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.idmc.game_2584;
+package application;
 
 import javafx.application.Platform;
 import javafx.concurrent.Task;
@@ -15,7 +15,6 @@ import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Pane;
-import model.*;
 import model.Modele2048;
 
 import java.net.URL;
