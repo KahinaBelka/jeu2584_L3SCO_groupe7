@@ -5,15 +5,11 @@
  */
 package model;
 
-/**
- *
- * @author Sylvain
- */
-public class Tuile2048 implements Tuile {
+public class Tuile2584 implements Tuile {
     private Grille grille;
     private int x,y;
     
-    public Tuile2048(Grille g, int abs, int ord){
+    public Tuile2584(Grille g, int abs, int ord){
         this.grille=g;
         this.x=abs;
         this.y=ord;

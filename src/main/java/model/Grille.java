@@ -9,11 +9,6 @@ import java.io.Serializable;
 import java.util.Arrays;
 import java.util.Random;
 
-/**
- *
- * @author Sylvain
- * Exemple avec le design pattern Singleton
- */
 public enum Grille implements Serializable {
     INSTANCE;
     

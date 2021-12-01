@@ -13,7 +13,7 @@ import java.util.Random;
  *
  * @author castagno
  */
-public class Modele2048 {
+public class Modele2584 {
     private int[][] grille = new int[4][4];
     
     @Override
@@ -25,7 +25,7 @@ public class Modele2048 {
         return result;
     }
     
-    public Modele2048(){
+    public Modele2584(){
         Random ra = new Random();
         grille[ra.nextInt(4)][ra.nextInt(4)]=(1+ra.nextInt(2))*2; 
         /*Scanner sc = new Scanner(System.in);

@@ -11,8 +11,8 @@ public class HelloApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("/FXMLDocument.fxml"));
-        //boolean add = scene.getStylesheets().add("css/styles.css");
         Scene scene = new Scene(root);
+        boolean add = scene.getStylesheets().add("/css/styles.css");
 
         stage.setScene(scene);
         stage.show();

@@ -7,19 +7,15 @@ package model;
 
 import java.util.ArrayList;
 
-/**
- *
- * @author Sylvain
- */
-public class Tuiles implements model.Tuile {
-    private ArrayList<model.Tuile> tuiles = new ArrayList<>();
+public class Tuiles implements Tuile {
+    private ArrayList<Tuile> tuiles = new ArrayList<>();
 
     @Override
     public void deplacer(Direction d) {
-        for (model.Tuile t : tuiles) { t.deplacer(d); }
+        for (Tuile t : tuiles) { t.deplacer(d); }
     }
     
-    public void add(model.Tuile t) { tuiles.add(t); }
+    public void add(Tuile t) { tuiles.add(t); }
 
-    public void remove(model.Tuile t) { tuiles.remove(t); }
+    public void remove(Tuile t) { tuiles.remove(t); }
 }

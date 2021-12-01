@@ -15,7 +15,7 @@ import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Pane;
-import model.Modele2048;
+import model.Modele2584;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -45,7 +45,7 @@ public class FXMLDocumentController implements Initializable {
     private int objectifx1 = 24, objectify1 = 191;
     private int x2 = 445, y2 = 191;
     private int objectifx2 = 445, objectify2 = 191;
-    private Modele2048 m;
+    private Modele2584 m;
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -78,7 +78,7 @@ public class FXMLDocumentController implements Initializable {
         c2.setVisible(true);
         
         // création du modèle
-        m = new Modele2048();
+        m = new Modele2584();
     }
 
     /*

@@ -5,10 +5,6 @@
  */
 package model;
 
-/**
- *
- * @author Sylvain
- */
 public enum Direction {
     GAUCHE, DROITE, HAUT, BAS;
 }

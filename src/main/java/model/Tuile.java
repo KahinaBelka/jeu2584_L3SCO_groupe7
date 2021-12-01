@@ -5,10 +5,6 @@
  */
 package model;
 
-/**
- *
- * @author Sylvain Exemple pour le design pattern composite
- */
 public interface Tuile {
     public void deplacer(Direction d);
 }
